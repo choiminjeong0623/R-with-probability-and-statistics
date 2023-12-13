@@ -21,7 +21,7 @@
 # H1에 의해 한쪽검정으로 임계값은0.05가 되므로 R을 통해 약 1.645임을 계산했다.
 # 검정통계량에 대한 유의확률은 R을 통해 약 0.369임을 알 수 있다.
 
-tmp <- read.table("./restitution.txt", header = T)
+tmp <- read.table("./resource/restitution.txt", header = T)
 rel <- ifelse(tmp$rst < 0.4134 | tmp$rst > 0.4374, 1, 0)
 
 n <- length(rel)
